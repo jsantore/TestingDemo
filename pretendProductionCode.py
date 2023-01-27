@@ -37,6 +37,10 @@ def testable_show_output(initial_bal, rate, outfile):
         outfile = sys.stdout
     print(f"Your new balance is ${balance}", file=outfile)
 
+
+def caclulate_20_percent_tip(amount:float) -> float:
+    return amount*20  #hmmmmmm it should make for a good class exercise at least.
+
 if __name__ == '__main__':
     #test the functions if running this as the main file
     print(add_interest(100, .05))
