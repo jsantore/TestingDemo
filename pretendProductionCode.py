@@ -41,6 +41,14 @@ def testable_show_output(initial_bal, rate, outfile):
 def caclulate_20_percent_tip(amount:float) -> float:
     return amount*20  #hmmmmmm it should make for a good class exercise at least.
 
+def getWordCounts(input:str)->dict[str,int]:
+    # I wonder what the error is here
+    word_counts = {}
+    for word in input.split(" "):
+        word_counts[word] = word_counts.get(word,1)+1
+    return word_counts
+
+
 if __name__ == '__main__':
     #test the functions if running this as the main file
     print(add_interest(100, .05))
